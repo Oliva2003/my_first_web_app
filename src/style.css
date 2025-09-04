@@ -1,14 +1,14 @@
-element.style {
-  line-height: 150%;
-}
-
-* {
-  font-size: 16px;
-}
-
 body {
   font-family: 'Roboto', 'sans-serif';
+  line-height: 150%;
+  font-size: 16px
 }
+
+. {
+  width: 100%;
+  border: 2px solid red;
+  border-collapse: collapse; 
+} 
 
 .first-table_th {
   border: 1px solid blue;
@@ -23,7 +23,7 @@ body {
   font-size: 14px;
   padding: 10px;
   text-align: left; 
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 h1 {
@@ -47,94 +47,11 @@ h4 {
 }
 
 img {
+  display: block;
+  margin: 0 auto;
   width: 200px;
-  height: 150px;
+  height: 150px; 
+  object-fit: cover;
   text-align: center;
   box-sizing: border-box;
 } 
-
-   <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 0 15px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #444;
-            padding: 8px 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #ddd;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px 0;
-        }
-    </style> 
-
-
-/* Стиль для всей страницы */
-body {
-  font-size: 16px; /* Размер текста 16 пикселей */
-  line-height: 150%; /* Размер строки 150% от размера текста */
-}
-
-/* Таблица */
-table {
-  width: 100%; /* Растянута по всей ширине страницы */
-  border: 2px solid red; /* Красные внешние границы */
-  border-collapse: collapse; /* Объединение границ */
-}
-
-/* Ячейки заголовка таблицы */
-th {
-  border: 2px solid blue; /* Синие границы */
-  font-size: 18px; /* Размер текста 18px */
-  font-weight: bold; /* Жирный шрифт */
-  padding: 10px; /* Внутренний отступ 10px */
-  text-align: left; /* Можно добавить для читаемости */
-}
-
-/* Ячейки данных таблицы */
-td {
-  border: 2px solid green; /* Зеленые границы */
-  font-size: 14px; /* Размер текста 14px */
-  font-weight: normal; /* Не жирный, не обычный — обычный */
-  padding: 10px; /* Внутренний отступ 10px */
-}
-
-/* Заголовки h1-h4 */
-h1 {
-  font-size: 250%; /* 250% от базового 16px => 40px */
-  font-weight: bold;
-}
-h2 {
-  font-size: 200%; /* 32px */
-  font-weight: bold;
-}
-h3 {
-  font-size: 150%; /* 24px */
-  font-weight: bold;
-}
-h4 {
-  font-size: 100%; /* 16px */
-  font-weight: bold;
-}
-
-/* Картинка: расположена по центру, занимает всю высоту и ширину */
-img {
-  display: block; /* чтобы margin auto работал */
-  margin: 0 auto; /* по центру */
-  width: 200px; /* ширина 200px */
-  height: 150px; /* высота 150px */
-  object-fit: cover; /* чтобы изображение заполнило область без искажения */
-}
